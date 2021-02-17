@@ -29,3 +29,13 @@ Este repositorio cuenta con los diversos archivos que se utilizaron para poder r
 ## Tecnologias adicionales utilizadas
 - Amazon Web Services - RDS - PostgresSQL para la base de datos
 - DBeaver -> Gestor para administrar la base de datos
+
+A continuación se explicará brevemente en que consiste cada archivo, iniciamos con nuestros archivos python
+
+
+| Python | Resumen |
+| ------ | ------ |
+| code_challenge_solutions.py | En este archivo se encuentra las soluciones a ambos problemas de manera general, se desarrollo usando una clase y sus respectivas funciones, basta con instanciar nuestro objeto y acceder a la función |
+| problema1_con_comentarios.py | Este script es el desarrollo del primer problema del code challenge, sin embargo en este archivo se explica cada línea cual es su función y la lógica para resolver el problema |
+| problema_2_con_comentarios.py |Este script es el desarrollo del segundo problema del code challenge, sin embargo en este archivo se explica cada línea cual es su función y la lógica para resolver el problema  |
+| Script_insertar_csv.py | Este srcipt es el necesario para poder subir la información de cada csv en nuestra base de datos en postrgesSQL alojada en aws, se usaron las librerías de sqlalchemy y pandas, ya que se lee el archivo, adicionalmente se crea una conexión, finalmente en la función df.to_sql se pasan los parametros necesarios, este script fue desarrollado en una clase |
