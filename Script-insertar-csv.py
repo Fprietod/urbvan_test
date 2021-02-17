@@ -31,3 +31,14 @@ class insert():
         engine4 = create_engine('postgresql://urbvan:root2022@database-postgress.c295zanvccq2.us-east-1.rds.amazonaws.com:5432/postgres')
         for df4 in pd.read_csv('trip_table.csv',chunksize=175292):
             df4.to_sql('trip_table.csv',engine4,index=False,if_exists='append')
+    def insert_with_spark(self):
+        myData = spark.read.format("csv").option("header","true").load("client_table.csv")
+        url = 'postgresql:database-postgress.c295zanvccq2.us-east-1.rds.amazonaws.com
+        myData.write.format('jdbc').options(
+            
+            url='jdbc:%s' % url,
+            driver='org.postgresql.Driver',
+            dbtable='client',
+            user='urbvan',
+             password='').mode('append').save()
+        
