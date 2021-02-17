@@ -20,7 +20,7 @@ Este repositorio cuenta con los diversos archivos que se utilizaron para poder r
 
 ## Códigos SQL
 - urbvan_trips.sql -> DDL
-- respuestas-quey.sql
+- respuestas-query.sql
 
 ## Código Scala
 - insert.scala
