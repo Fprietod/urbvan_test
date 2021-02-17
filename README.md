@@ -39,3 +39,11 @@ A continuación se explicará brevemente en que consiste cada archivo, iniciamos
 | problema1_con_comentarios.py | Este script es el desarrollo del primer problema del code challenge, sin embargo en este archivo se explica cada línea cual es su función y la lógica para resolver el problema |
 | problema_2_con_comentarios.py |Este script es el desarrollo del segundo problema del code challenge, sin embargo en este archivo se explica cada línea cual es su función y la lógica para resolver el problema  |
 | Script_insertar_csv.py | Este srcipt es el necesario para poder subir la información de cada csv en nuestra base de datos en postrgesSQL alojada en aws, se usaron las librerías de sqlalchemy y pandas, ya que se lee el archivo, adicionalmente se crea una conexión, finalmente en la función df.to_sql se pasan los parametros necesarios, este script fue desarrollado en una clase |
+
+## SQL y Scala
+
+| SQL | Resumen |
+| ------ | ------ |
+| urbvan_trips.sql | En este archivo practicamente es el DDL de nuestra base de datos, aquí encontramos toda la estructura de como se creo la tabla y algunos comandos que se utilizaron para agregar las llaves foraneas, cabe mencionar que primero se creo la tabla con su respectiva llave primaria|
+| respuestas-query.sql | En este archivo se encuentran los querys que se utilizaron para poder las respectivas respuestas a las preguntas, cabe mencionar que se pueden optimizar estos querys, por el tiempo se opto por dejarlos como están |
+| insert.scala | Este archivo es ideal utilizando Apache Zeppellin, similar como Jupyter, solo que este es para que podamos usar Spark, se intento configurar para poder subir los csv ya que por tiempos, para este caso de uso sería ideal utilizar spark para subir gran cantidad de archivos |
