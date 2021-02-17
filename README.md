@@ -9,7 +9,7 @@ Este repositorio cuenta con los diversos archivos que se utilizaron para poder r
 
 - Códigos SQL
 - Códigos python comentados y sin comentarios
-- ✨Respuestas de los query del respectivo archivo
+- ✨Respuestas de los query del las respectivas preguntas
 
 ## Códigos Python
 
