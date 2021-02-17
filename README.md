@@ -38,7 +38,7 @@ A continuación se explicará brevemente en que consiste cada archivo, iniciamos
 | code_challenge_solutions.py | En este archivo se encuentra las soluciones a ambos problemas de manera general, se desarrollo usando una clase y sus respectivas funciones, basta con instanciar nuestro objeto y acceder a la función |
 | problema1_con_comentarios.py | Este script es el desarrollo del primer problema del code challenge, sin embargo en este archivo se explica cada línea cual es su función y la lógica para resolver el problema |
 | problema_2_con_comentarios.py |Este script es el desarrollo del segundo problema del code challenge, sin embargo en este archivo se explica cada línea cual es su función y la lógica para resolver el problema  |
-| Script_insertar_csv.py | Este srcipt es el necesario para poder subir la información de cada csv en nuestra base de datos en postrgesSQL alojada en aws, se usaron las librerías de sqlalchemy y pandas, ya que se lee el archivo, adicionalmente se crea una conexión, finalmente en la función df.to_sql se pasan los parametros necesarios, este script fue desarrollado en una clase |
+| Script_insertar_csv.py | Este srcipt es el necesario para poder subir la información de cada csv en nuestra base de datos en postrgesSQL alojada en aws, se usaron las librerías de sqlalchemy y pandas, ya que se lee el archivo, adicionalmente se crea una conexión, finalmente en la función df.to_sql se pasan los parametros necesarios, este script fue desarrollado en una clase, adicionalmente se agrego una función con pyspark esto es recomendable ejecuttarlo en apache zepellin, o instalar spark en jupyter para un procesamiento más rápido de los datos |
 
 ## SQL y Scala
 
@@ -55,7 +55,7 @@ A continuación se explicará brevemente en que consiste cada archivo, iniciamos
 Si se desea comprobar que los registros se encuentran en la base de datos, el equipo puede comprobarlo accediendo a la base de datos que se encuentra en postgresSQL
 | Endpoint | Port | Usuario | |Contraseña |
 | ------ | ------ | --------------| --------| -----|
-|database-postgress.c295zanvccq2.us-east-1.rds.amazonaws.com| 5432|urbvan||root2022|
+|database-postgress.c295zanvccq2.us-east-1.rds.amazonaws.com| 5432|data_team||urbvan2022|
 
 
 
