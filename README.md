@@ -56,3 +56,11 @@ Si se desea comprobar que los registros se encuentran en la base de datos, el eq
 | Endpoint | Port | Usuario | |Contraseña |
 | ------ | ------ | --------------| --------| -----|
 |database-postgress.c295zanvccq2.us-east-1.rds.amazonaws.com| 5432|urbvan||root2022|
+
+
+
+## Créditos
+
+Felipe Prieto de la Cruz
+
+**Big Data!**
