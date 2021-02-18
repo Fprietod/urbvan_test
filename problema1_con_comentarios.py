@@ -1,40 +1,30 @@
-def problem_2(A: List[int], B: List[int]) -> List[int]: #Declaramos nuestras listas entran
- #Igual manera la lista que sale
- # Ya que los diccionarios trabajan con hash
- #Utilizaremos un diccionario para guardar
- #La posición de elemento de nuestra lista
- #Para que podamos tener nuestro clave - valor
- #En la otra lista guardaremos el index
- #De posición que ocupa en la lista A
-  mapp_index = {}
-  resultado = []
-  for i , j in enumerate(B):
-    #Usamos la función enumerate para poder
-    #enumerar cada elemento de nuestra lista
-    #Que así podamos iterar entre los elementos
-    mapp_index[j] = i
-    #Quedaría asi:
-    #{50:0, 12:1}
-    #En este caso nuestro valor de la lista
-    # Será nuestra key única con la cual se
-    #podrá buscar el elemento
-    #Nuestro iterador en el diccionario
-    #Sera nuestro valor porque en la lista A
-    #Cuando se haga el recorrido lo que se va
-    #Buscar será nuestra key, ya que es única
+ def average_students(items: List[List[int]]) -> List[List[int]]: #Creamos objeto 
+  items.sort(reverse = True) # Ordenamos nuestra lista descendentemente
+  resultado = [] #En esta nueva lista se encontrara el id y promedio de los 
+  suma_valor = [] #En esta lista guardamos los valores, por cada ID
+  index_lista = items[0][0] #Accedemos a nuestro objeto Items en este caso 
+
+
+
   
-  for a in A:
-    #Al iterar en nuestra lista A
-    #Podemos observar que estaría quedando 
-    #Similar a esto:
-    #{12:0 , 28:1}
-    #Al tener esto es nuestro ciclo
-    #Cada elemento de la lista A buscara
-    #Su llave en nuestro lista B
-    #Y devolveremos su valor
-    #En este caso será su index
-    #A grandes rasgos en este ciclo se
-    #Busca su llave con llave y se obtiene
-    #Su valor
-    resultado.append(mapp_index[a])
-  return resultado
+  for i , j in items:
+    #Creamos un ciclo donde vamos a iterar con nuestra lista
+    #i será nuestro index y j será el valor del cual le sigue.
+    #Ejemplo: i = 2 , j = 85
+    #Si i en este caso es igual al index de nuestra lista
+    #Inicia otra condición donde si, nuestra lista suma_id es menor
+    #que 5, agregamos el valor que se encuentra en el ciclo de i
+
+    if i == index_lista and index_lista <=1000: 
+      if len(suma_id) < 5 and j <=1000:
+        suma_id.append(j)
+    else:
+      resultado.append([index_lista,sum(suma_valor) // len(suma_valor)])
+      suma_valor = [j]
+      index_lista = i
+      resultado = resultado[::-1]
+      #Cuando tenemos una lista llena, procedmos a obtener el promedio para esto 
+      #En este paso ya tenemos todos los estudiantes procesados, procede a guardarlo
+
+       if resultado[0][1] <= 100:
+        return resultado
