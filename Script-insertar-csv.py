@@ -14,12 +14,12 @@ def create_database():
         #Cerramos la conexión con la actual base de datos
         conn.close()
         
-        #Conectamos con la base de datos de sparkify
+        #Conectamos con la base de datos de urbvan
         conn = psycopg2.connect("host=database-2.c295zanvccq2.us-east-1.rds.amazonaws.com dbname=urbvan user=student password=root2021")
         cur = conn.cursor()
         
         #Agregamos las llaves foraneas
-        cur.execute("ALTER TABLE public.reservation ADD CONSTRAINT reservation_fk FOREIGN KEY (client_id) REFERENCES public.client(client_id);)
+        cur.execute("ALTER TABLE public.reservation ADD CONSTRAINT reservation_fk FOREIGN KEY (client_id) REFERENCES public.client(client_id);")
         cur.execute("ALTER TABLE public.reservation ADD CONSTRAINT reservation_fk_1 FOREIGN KEY (trip_id) REFERENCES public.trip(trip_id);")
         cur.execute("ALTER TABLE public.trip ADD CONSTRAINT trip_fk FOREIGN KEY (driver_id) REFERENCES public.driver(driver_id);")
         
