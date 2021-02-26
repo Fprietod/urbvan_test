@@ -47,7 +47,8 @@ def procesando_datos(cur,conn,table_name,filepath):
 
  # En esta funcion procesamos nuestros datos, abrimos nuestro archivo y procedmos a insertar los datos por tabla
  # Esta función para insertar datos se encuentra optimizada para insertar archivos muy muy grandes, hasta 30 millones de records
- # Unicamente es en cada metodo de insertar_datos_nombre_de_la_tabla, se especifica la ruta del archivo   
+ # Unicamente es en cada metodo de insertar_datos_nombre_de_la_tabla, se especifica la ruta del archivo
+ # Se crearon metodos por separado para poder insertar uno por uno y comprobar que los registros están exitosamente
         
             
     
